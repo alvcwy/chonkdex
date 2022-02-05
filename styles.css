@@ -1,0 +1,104 @@
+body {
+  text-align: center;
+  padding: 0px;
+
+  /*change the below two properties for light mode/dark mode*/
+  background-color: black;
+  color: white;
+}
+
+header {
+  padding: 80px;
+  background: #1abc9c;
+  color: white;
+}
+
+#mode {
+  float: right;
+  background-color: black;
+  color: white;
+}
+
+/*navbar CSS from https://www.w3schools.com/howto/howto_make_a_website.asp */
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+#navbar a {
+  /*for left-aligned navbar
+  float: left;
+  display: block */
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+h2 {
+  margin-top: 2%;
+}
+
+h3 {
+  margin-top: 2%;
+}
+
+p {
+  margin-top: 1%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+table {
+  margin: 0 auto;
+}
+
+/*resize YouTube videos, from https://www.w3schools.com/howto/howto_css_responsive_iframes.asp*/
+.container {
+  overflow: hidden;
+  padding-top: 40%; /*change padding-top value to change size of container and hence shape of YouTube vid*/
+  position: relative;
+}
+iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+   /*height and width are 100% of the container it is in*/
+}
+
+img {
+  /* auto resize images based on display size, from https://stackoverflow.com/questions/16217355/automatically-resize-images-with-browser-size-using-css */
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
+}
+
+#carousel {
+  width: 40%;
+  min-height: 750px;
+  max-height: 750px;
+  overflow: hidden;
+  margin: 0 auto; /*centers slideshow*/
+}
+  /* to resize image slideshow, from https://stackoverflow.com/questions/17357306/bootstrap-carousel-resizing-image */
+
+/*resize slideshow if screen is below 700px*/
+@media screen and (max-width: 700px) {
+  #carousel {
+    width: 70%;
+    min-height: 200px;
+    max-height: 200px;
+  }
+}
+
+footer {
+  padding: 5px;
+  background-color: #1abc9c;
+}
